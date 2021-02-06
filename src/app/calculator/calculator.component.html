@@ -1,10 +1,11 @@
 <div class="calculator">
 
-  <input type="text" class="calculator-screen" [value]="currentNumber" disabled />
+  <input type="text" class="calculator-screen" [(value)]="currentNumber" disabled />
+
 
   <div class="calculator-keys">
 
-    <button type="button" (click) = "getOperation('+')" class="operator" value="+">+</button>
+    <button type="button" (click) = "getOperation('+')" class="operator" value="+" >+</button>
     <button type="button" (click) = "getOperation('-')" class="operator" value="-">-</button>
     <button type="button" (click) = "getOperation('*')" class="operator" value="*">&times;</button>
     <button type="button" (click) = "getOperation('/')" class="operator" value="/">&divide;</button>
